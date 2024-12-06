@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham Rounded Bold.otf">
+            <string>GothamRounded-Bold</string>
+        </array>
+        <array key="Gotham Rounded Light.otf">
+            <string>GothamRounded-Light</string>
+        </array>
+        <array key="Gotham Rounded Medium.otf">
+            <string>GothamRounded-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="n1Q-9J-jhY" customClass="IntroView" customModule="LEP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="975" height="628"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estoy poniendo una vía intravenosa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbM-Nf-bBP">
+                    <rect key="frame" x="436" y="68" width="475" height="80"/>
+                    <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="40"/>
+                    <color key="textColor" name="patientColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhy-E0-0dN">
+                    <rect key="frame" x="368" y="76" width="48" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Y5T-rb-n8i"/>
+                        <constraint firstAttribute="width" constant="48" id="e83-xk-MrQ"/>
+                    </constraints>
+                    <color key="tintColor" name="patientColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="speaker_default" title=""/>
+                    <connections>
+                        <action selector="audioTapped:" destination="n1Q-9J-jhY" eventType="touchUpInside" id="za8-WO-6ZN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am inserting a IV" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBK-eh-Bia">
+                    <rect key="frame" x="366" y="178" width="577" height="36"/>
+                    <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am inserting a IV" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGn-H3-GXk">
+                    <rect key="frame" x="366" y="375" width="577" height="36"/>
+                    <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_other_roles" translatesAutoresizingMaskIntoConstraints="NO" id="DFo-Di-BRJ">
+                    <rect key="frame" x="40" y="68" width="308" height="234"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="308" id="cTD-Kr-Ade"/>
+                        <constraint firstAttribute="height" constant="234" id="zEl-up-ocz"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCe-42-bML">
+                    <rect key="frame" x="911" y="12" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="BhH-VN-YkF"/>
+                        <constraint firstAttribute="width" constant="48" id="CGA-Kp-AeL"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="close"/>
+                    <connections>
+                        <action selector="close:" destination="n1Q-9J-jhY" eventType="touchUpInside" id="uh7-yY-Nvq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5B-vQ-qBK">
+                    <rect key="frame" x="101.5" y="322" width="185" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="185" id="aiz-Wz-ZXl"/>
+                        <constraint firstAttribute="height" constant="60" id="sj1-gs-tJg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="22"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="No entiendo">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="understandTapped:" destination="n1Q-9J-jhY" eventType="touchUpInside" id="db3-he-Nbo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozf-It-jZl">
+                    <rect key="frame" x="368" y="265" width="48" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="B7M-K4-XLn"/>
+                        <constraint firstAttribute="height" constant="50" id="ftj-jv-3Wa"/>
+                    </constraints>
+                    <color key="tintColor" name="patientColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="speaker_default" title=""/>
+                    <connections>
+                        <action selector="audioTapped:" destination="n1Q-9J-jhY" eventType="touchUpInside" id="7a4-Gw-ezc"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="patient does not understand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7b-cu-Qk5">
+                    <rect key="frame" x="96" y="390" width="196.5" height="14.5"/>
+                    <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="uAC-Hh-KLo">
+                    <rect key="frame" x="348" y="431" width="563" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="GBm-of-Og3"/>
+                    </constraints>
+                    <segments>
+                        <segment title="cuando sea necesario"/>
+                        <segment title="30 min"/>
+                        <segment title="1 hr"/>
+                        <segment title="2 hr"/>
+                        <segment title="4 hr"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" name="nurseColor"/>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estoy poniendo una vía intravenosa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ieu-oL-VDV">
+                    <rect key="frame" x="436" y="265" width="475" height="80"/>
+                    <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="40"/>
+                    <color key="textColor" name="patientColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="pMQ-cz-gQ6"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="DFo-Di-BRJ" firstAttribute="leading" secondItem="n1Q-9J-jhY" secondAttribute="leading" constant="40" id="061-lC-A53"/>
+                <constraint firstItem="uAC-Hh-KLo" firstAttribute="trailing" secondItem="Ieu-oL-VDV" secondAttribute="trailing" id="5ZL-wN-LeW"/>
+                <constraint firstItem="N7b-cu-Qk5" firstAttribute="centerX" secondItem="x5B-vQ-qBK" secondAttribute="centerX" id="6ts-OP-DN1"/>
+                <constraint firstItem="CGn-H3-GXk" firstAttribute="leading" secondItem="DFo-Di-BRJ" secondAttribute="trailing" constant="18" id="7c6-wZ-YHx"/>
+                <constraint firstItem="Ieu-oL-VDV" firstAttribute="trailing" secondItem="JbM-Nf-bBP" secondAttribute="trailing" id="CJJ-Ue-3Te"/>
+                <constraint firstItem="XBK-eh-Bia" firstAttribute="leading" secondItem="DFo-Di-BRJ" secondAttribute="trailing" constant="18" id="JXo-Td-P5v"/>
+                <constraint firstItem="bhy-E0-0dN" firstAttribute="leading" secondItem="DFo-Di-BRJ" secondAttribute="trailing" constant="20" id="KCT-lN-JF8"/>
+                <constraint firstAttribute="trailingMargin" secondItem="XBK-eh-Bia" secondAttribute="trailing" constant="12" id="Lyg-ba-Iqj"/>
+                <constraint firstItem="uAC-Hh-KLo" firstAttribute="leading" secondItem="DFo-Di-BRJ" secondAttribute="trailing" id="Q1d-aI-d8B"/>
+                <constraint firstItem="uAC-Hh-KLo" firstAttribute="top" secondItem="CGn-H3-GXk" secondAttribute="bottom" constant="20" id="SmA-FF-dEO"/>
+                <constraint firstItem="pMQ-cz-gQ6" firstAttribute="trailing" secondItem="eCe-42-bML" secondAttribute="trailing" constant="16" id="SzN-a7-0OL"/>
+                <constraint firstItem="Ieu-oL-VDV" firstAttribute="top" secondItem="XBK-eh-Bia" secondAttribute="bottom" constant="51" id="TJq-H8-tMX"/>
+                <constraint firstItem="JbM-Nf-bBP" firstAttribute="top" secondItem="pMQ-cz-gQ6" secondAttribute="top" constant="48" id="UZv-dm-0fX"/>
+                <constraint firstItem="XBK-eh-Bia" firstAttribute="top" secondItem="JbM-Nf-bBP" secondAttribute="bottom" constant="30" id="VJy-Hq-yo9"/>
+                <constraint firstItem="N7b-cu-Qk5" firstAttribute="top" secondItem="x5B-vQ-qBK" secondAttribute="bottom" constant="8" symbolic="YES" id="W9A-57-Eol"/>
+                <constraint firstItem="DFo-Di-BRJ" firstAttribute="top" secondItem="pMQ-cz-gQ6" secondAttribute="top" constant="48" id="aex-hb-Mqp"/>
+                <constraint firstItem="Ozf-It-jZl" firstAttribute="top" secondItem="Ieu-oL-VDV" secondAttribute="top" id="coz-2o-TBJ"/>
+                <constraint firstItem="x5B-vQ-qBK" firstAttribute="centerX" secondItem="DFo-Di-BRJ" secondAttribute="centerX" id="fex-ZZ-LjS"/>
+                <constraint firstItem="x5B-vQ-qBK" firstAttribute="top" secondItem="DFo-Di-BRJ" secondAttribute="bottom" constant="20" id="gPP-iT-iuq"/>
+                <constraint firstItem="bhy-E0-0dN" firstAttribute="top" secondItem="JbM-Nf-bBP" secondAttribute="top" constant="8" id="o14-Fv-mHC"/>
+                <constraint firstItem="Ieu-oL-VDV" firstAttribute="leading" secondItem="Ozf-It-jZl" secondAttribute="trailing" constant="20" id="oKw-pn-i5E"/>
+                <constraint firstItem="CGn-H3-GXk" firstAttribute="top" secondItem="Ieu-oL-VDV" secondAttribute="bottom" constant="30" id="s4Y-5D-Mr8"/>
+                <constraint firstAttribute="trailingMargin" secondItem="CGn-H3-GXk" secondAttribute="trailing" constant="12" id="u48-7r-QDk"/>
+                <constraint firstItem="JbM-Nf-bBP" firstAttribute="leading" secondItem="bhy-E0-0dN" secondAttribute="trailing" constant="20" id="uyo-eJ-3dm"/>
+                <constraint firstItem="JbM-Nf-bBP" firstAttribute="trailing" secondItem="eCe-42-bML" secondAttribute="leading" id="vWW-vB-lYd"/>
+                <constraint firstItem="Ozf-It-jZl" firstAttribute="leading" secondItem="DFo-Di-BRJ" secondAttribute="trailing" constant="20" id="z6w-jF-Sdu"/>
+                <constraint firstItem="eCe-42-bML" firstAttribute="top" secondItem="n1Q-9J-jhY" secondAttribute="top" constant="12" id="zah-j7-26b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeButton" destination="eCe-42-bML" id="bhd-EH-hK0"/>
+                <outlet property="englishTitleLabel" destination="XBK-eh-Bia" id="agy-W2-BGi"/>
+                <outlet property="englishTitleSecondLabel" destination="CGn-H3-GXk" id="dcy-UP-oGX"/>
+                <outlet property="firstSpeaker" destination="bhy-E0-0dN" id="cpR-jP-XSu"/>
+                <outlet property="imageView" destination="DFo-Di-BRJ" id="En4-hG-wAK"/>
+                <outlet property="secondSpeaker" destination="Ozf-It-jZl" id="fFo-I6-C9c"/>
+                <outlet property="segmentControl" destination="uAC-Hh-KLo" id="Qpi-rB-3J2"/>
+                <outlet property="spanishTitleLabel" destination="JbM-Nf-bBP" id="00x-VN-7Ez"/>
+                <outlet property="spanishTitleSecondLabel" destination="Ieu-oL-VDV" id="7hp-ja-yTN"/>
+                <outlet property="understandButton" destination="x5B-vQ-qBK" id="yho-aa-Jg0"/>
+                <outlet property="understandLabel" destination="N7b-cu-Qk5" id="FyF-XS-WVO"/>
+            </connections>
+            <point key="canvasLocation" x="162.14028776978418" y="-5.0359712230215834"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="52" height="52"/>
+        <image name="p_other_roles" width="132" height="120"/>
+        <image name="speaker_default" width="64" height="64"/>
+        <namedColor name="nurseColor">
+            <color red="0.16500000655651093" green="0.70200002193450928" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="patientColor">
+            <color red="0.24300000071525574" green="0.74099999666213989" blue="0.37299999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,5 @@
+
+.DS_Store
+/Build/SourcePackages
+/Pods
+Podfile.lock
